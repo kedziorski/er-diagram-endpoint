@@ -22,6 +22,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+
+		<schemacrawler.version>14.21.02</schemacrawler.version>
+		<graphviz-java.version>0.5.2</graphviz-java.version>
 	</properties>
 
 	<dependencies>
@@ -39,6 +42,22 @@
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+
+		<dependency>
+			<groupId>us.fatehi</groupId>
+			<artifactId>schemacrawler</artifactId>
+			<version>${schemacrawler.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>guru.nidi</groupId>
+			<artifactId>graphviz-java</artifactId>
+			<version>${graphviz-java.version}</version>
+		</dependency>
+
+
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
